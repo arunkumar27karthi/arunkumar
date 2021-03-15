@@ -1,0 +1,84 @@
+.body-container {
+    max-height: 350px;
+    background-color: black;
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.body-container::-webkit-scrollbar {
+    width: 0;
+}
+
+.body-container .body-block {
+    height: 340px;
+    min-width: 300px;
+    border: 2px solid linear-gradient(rgb(219, 219, 219), rgb(99, 98, 98));
+    padding-right: 10px;
+    margin-left: 50px;
+    border-radius: 10px;
+}
+
+#content-block {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.body-block #content-block #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(83, 83, 83), rgb(39, 39, 39));
+    border: 1px solid rgb(95, 93, 93);
+    text-align: center;
+}
+
+.body-block #content-block #title>div {
+    font-size: 20px;
+    color: beige;
+}
+
+.body-block #content-block #image {
+    margin-top: 10px;
+    height: 265px;
+    width: 300px;
+    background: linear-gradient(300deg, rgb(71, 71, 71), rgb(39, 39, 39));
+    border: 1px solid rgb(88, 85, 85);
+    box-shadow: grey;
+    overflow: hidden;
+}
+
+.body-block #content-block #image a img {
+    width: 260px;
+    height: 260px;
+    opacity: 1;
+}
+
+#content-block #image a>img:hover {
+    width: 300px;
+    height: 300px;
+    margin: -30px;
+    opacity: 1;
+    transition: ease 500ms;
+}
+
+.body-block #content-block #description {
+    height: 100px;
+    width: 85%;
+    margin-top: -110px;
+    margin-left: 20px;
+    margin-right: -20px;
+    border: 1px solid rgb(70, 70, 70);
+    color: rgb(138, 139, 137);
+    background: linear-gradient(270deg, wheat, rgb(219, 219, 219));
+}
+
+.About {
+    width: 100%;
+    height: 300px;
+}

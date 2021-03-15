@@ -1,0 +1,55 @@
+.loader_block>div {
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: relative;
+    border-radius: 100px;
+    animation: loaderIn 1s;
+    transition-timing-function: cubic-bezier(1, 3.69, 0.13, -1.52);
+    animation-iteration-count: infinite;
+}
+
+.loader_block {
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.loader_block.hidden {
+    animation: fadeOut 1500ms 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes loaderIn {
+    0% {
+        height: 0;
+        width: 0;
+        background: red;
+    }
+    50% {
+        background: rgb(253, 132, 132);
+    }
+    90% {
+        height: 200px;
+        width: 200px;
+        border-radius: 200px;
+        background: rgb(255, 220, 220);
+    }
+    100% {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
