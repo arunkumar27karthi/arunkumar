@@ -9,11 +9,11 @@
     <link rel="stylesheet" href={% static 'styles/home_hang_img.css' %}></link>
     <link rel="stylesheet" href={% static 'styles/loader.css' %}></link>
 </head>
-<body>
-    <div class="loader_block hidden">
+<body onload="myFunction()">
+    <div class="loader_block hidden" id="loader">
             <div></div>
     </div>
-    <div class="header-container">
+    <div class="header-container" id="header">
         
         <div class="header-block">
             <div class="text-nav-content">
@@ -103,5 +103,17 @@
 
     <div class="footer-container">
     </div>
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 4000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("header").style.display = "block";
+        }
+    </script>
 </body>
 </html>
